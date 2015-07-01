@@ -1,0 +1,58 @@
+body{
+  background:#3c3c3c;
+}
+
+svg{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+  width:600px;
+  height:600px;
+  stroke-dasharray:500;
+  stroke-dashoffset:500;
+  opacity:0;
+  animation:6s font-outline infinite forwards;
+}
+/* in animation's option we can also add "infinite" before "forwards" and also "alternate" in place of "forwards" so that it wil not stop after first animation */
+
+svg ellipse{
+  fill:none;
+  stroke-width:10px;
+  stroke:#fafafa;
+  stroke-dasharray:1360;
+  stroke-dashoffset:1360;
+  opacity:0;
+  animation:3s ellipse-outline infinite forwards;
+}
+
+svg path{
+  fill:none;
+  stroke-width:3px;
+  stroke:#fafafa;
+}
+
+@keyframes ellipse-outline{
+  from{
+    stroke-dashoffset:1360;
+    opacity:0;
+  }
+  to{
+    stroke-dashoffset:0;
+    opacity:1; 
+  }
+}
+
+
+@keyframes font-outline{
+  from{
+    stroke-dashoffset:500;
+    opacity:0;
+  }
+  to{
+    stroke-dashoffset:0;
+     opacity:1; 
+  }
+}
