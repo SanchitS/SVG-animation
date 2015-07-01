@@ -16,7 +16,7 @@ svg{
   opacity:0;
   animation:6s font-outline infinite forwards;
 }
-/* in animation's option we can also add "infinite" before "forwards" and also "alternate" in place of "forwards" so that it wil not stop after first animation */
+/* in animation's option we can also add "infinite" before "forwards" and also "alternate" in place of "forwards" so that it wil not stop after first animation and also alternate will reverse the paths of the animation*/
 
 svg ellipse{
   fill:none;
