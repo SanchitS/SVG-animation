@@ -1,0 +1,13 @@
+#	to rotate something  360 degree add this in the css file:
+		transform:rotate(360deg)
+
+#	and to rotate from center just add
+		transform-origin: 50% 50%;
+
+#	if we add "scale" after the time in the animation property then it will animate the object and scale accordingly..
+		(e.g animation: 5s scale infinite alternate;)
+	and with "scale" we have to add the transformation-origin property because scale will only maniplulate the object in one direction and not along the center.
+
+NOTE:If you want to add any of these files in your HTML file then copy the code from the .html file and paste it into your html file but delete the CSS-link tab from these object's .html file. And for the CSS just copy and paste the CSS into the primary CSS file or if you are adding a new file the add a link for that in your html file.
+
+Thanks
