@@ -1,0 +1,60 @@
+ body{
+  background:#3c3c3c;
+}
+
+svg{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+  width:600px;
+  height:600px;
+}
+rect {
+  fill:none;
+  stroke:#fafafa;
+  stroke-dasharray:2000;
+  stroke-dashoffset:2000;
+  animation: 7s outline forwards;
+}
+
+svg line{
+  stroke:#fafafa;
+  stroke-dasharray:300;
+  stroke-dashoffset:300;
+  animation: 4s line forwards;
+}
+
+
+svg path{
+  fill:#fafafa;
+  opacity:0;
+  animation: 6s text forwards;
+  animation-delay:3s;
+  }
+
+@keyframes outline{
+  from{
+    stroke-dashoffset:2000;
+  }
+  to{
+    stroke-dashoffset:0;
+  }}
+
+
+@keyframes line{
+  from{
+    stroke-dashoffset:200;
+  }
+  to{
+    stroke-dashoffset:-230;
+  }}
+
+
+@keyframes text{
+  from{opacity:0;
+  }
+  to{opacity:1;
+  }}
